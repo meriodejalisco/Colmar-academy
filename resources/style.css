@@ -1,0 +1,571 @@
+/*universal*/
+body {
+  margin: auto;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: rgb(74, 74, 74);
+}
+div {
+  display: block;
+}
+.mobile {
+  display: none;
+}
+/*header*/
+nav {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  /*z-index: 1;*/
+  justify-content: space-between;
+  background-color: rgb(255,255,255);
+  font-size: 1.5rem;
+  height: 5rem;
+  width: 100%;
+
+  align-items: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 0;
+
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 1.5rem;
+  height: 3rem;
+  font-family: "Merriweather", sans-serif;
+}
+.logo img {
+  height: 100%;
+
+}
+nav .menu {
+  display: flex;
+  /*padding-left: 10rem;*/
+  flex-wrap: nowrap;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: .03rem;
+
+
+}
+
+nav a {
+  display: inline-flex;
+  padding-right: 1rem;
+  padding-left: 1rem;
+
+  font-weight: lighter;
+  text-decoration: none;
+  color: rgb(74, 74, 74);
+
+}
+nav a:hover {
+  background-color: rgb(216, 216, 216);
+  border-radius: 1.5rem;
+}
+
+#grey {
+  font-weight: 300;
+  color: rgb(216, 216, 216);
+
+}
+nav .mobile {
+  display: none;
+}
+/*header smaller screen*/
+@media only screen and (max-width: 800px){
+  nav .navigation .desktop {
+    display: none;
+  }
+  nav .navigation .mobile {
+    display: block;
+  }
+}
+
+/*header mobile*/
+@media only screen and (max-width: 480px){
+  nav .desktop {
+    display: none;
+
+  }
+  nav .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  nav  .navigation .mobile .menu a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+}
+/*main*/
+.main {
+  border-left: .15rem solid rgb(74, 74, 74);
+  border-right: .15rem solid rgb(74, 74, 74);
+}
+/*banner*/
+.banner {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: .1rem;
+  direction: row;
+  background-color: rgb(216, 216, 216);
+  width: 100%;
+  padding-top: 6rem;
+}
+.banner .image-container img {
+width: 90%;
+padding: 2rem 1.5rem;
+}
+.banner .text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+  margin-right: 2rem;
+  align-content: center;
+
+}
+.banner h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  margin-top: 4rem;
+  align-items: center;
+}
+.banner h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+.banner button {
+  color: rgb(255,255,255);
+  background-color: rgb(74, 74, 74);
+  border-radius: 2rem;
+  text-align: center;
+  padding: .5rem;
+  align-items: center;
+  font-weight: 300;
+  line-height: 1.4;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.banner button:hover {
+  color: rgb(94, 134, 237);
+  border: .15rem solid rgb(255,255,255);
+   transform: scale(1.2, 1.2);
+
+
+}
+/*banner mobile*/
+@media only screen and (max-width: 700px) {
+.banner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.banner .image-container img {
+  width: 100%;
+  padding: 0;
+
+}
+.banner .text-container h1{
+  padding: 2rem 1rem;
+}
+.banner .text-container h3{
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+}
+.banner .text-container button {
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+}
+}
+/*info*/
+.info-container {
+  display: flex;
+  flex-direction: row;
+  letter-spacing: .03rem;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(243, 245, 244);
+}
+.column-left {
+  width: 70%;
+  padding-top: 2rem;
+  padding-left: 1.5rem;
+}
+.info-container .column-left img {
+  width: 80%;
+  border-left: .15rem solid rgb(216, 216, 216);
+  border-right: .15rem solid rgb(216, 216, 216);
+
+}
+.column-left .text-container {
+  width: 80%;
+  align-items: center;
+
+}
+.info-container .column-left h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+
+}
+.info-container .column-left h5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-bottom: 2rem;
+
+}
+.info-container .column-left p {
+ font-weight: 100;
+ font-size: 2rem;
+ padding-bottom: 2rem;
+}
+
+.info-container .column-right {
+  display: flex;
+  flex-direction: column;
+  border-left: .15rem solid rgb(216, 216, 216);
+  padding-bottom: 2rem;
+
+}
+.info-container .column-right img {
+
+border-left: .15rem solid rgb(216, 216, 216);
+border-right: .15rem solid rgb(216, 216, 216);
+margin-top: 1rem;
+margin-bottom: 2rem;
+}
+.orientation, .campus, .lecturer {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+  padding-left: 3rem;
+  padding-right: 2rem;
+
+
+}
+.info-container .column-right .info-text {
+padding-left: 2rem;
+display: flex;
+flex-direction: column;
+align-content: center;
+justify-content: center;
+}
+
+.lecturer:hover, .orientation:hover, .campus:hover {
+  background-color: rgb(216, 216, 216);
+}
+.orientation {
+  border-bottom: .15rem solid rgb(216, 216, 216);
+  margin-bottom: .2rem;
+}
+.campus, .lecturer {
+  border-top: .15rem solid rgb(216, 216, 216);
+
+}
+.campus {
+border-bottom: .15rem solid rgb(216, 216, 216);
+margin-bottom: .2rem;
+}
+
+.info-text h3 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: .5rem;
+
+}
+.info-text h5 {
+  font-weight: 100;
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+  padding-top: 1rem;
+
+
+}
+.info-text .read-more {
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+
+}
+.info-text .read-more a{
+  text-decoration: none;
+  color: rgb(94, 134, 237);
+
+}
+.info-text .read-more a:hover {
+  background-color: rgb(243, 245, 244);
+  border-radius: 1.5rem;
+  padding: .5rem;
+  border: .15rem solid rgb(74, 74, 74);
+
+}
+
+/*info mobile*/
+
+
+}
+@media only screen and (max-width: 700px) {
+.info-container .desktop {
+  display: none;
+}
+.infor-container .mobile {
+  display: block;
+}
+.info-container .column-right {
+  display: flex;
+  flex-direction: column;
+
+}
+.orientation, .campus, .lecturer {
+padding-bottom: 2rem;
+}
+.column-right .mobile img {
+  width: 35%;
+  margin-top: 1rem;
+   margin-right: 1rem;
+   margin-bottom: 1rem;
+   margin-left: 1rem;
+   /*float: left;*/
+}
+
+}
+/*courses*/
+.courses-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(234, 234, 234);
+  letter-spacing: .03rem;
+  padding-left: 2.5rem;
+  padding-right: 4.5rem;
+  padding-bottom: 4rem;
+}
+.courses-container .title h2{
+    font-size: 3rem;
+    font-weight: 700;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+.courses-container .title{
+ text-align: center;
+}
+.courses {
+  display: flex;
+  flex-direction: row;
+
+}
+ .c-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255,255,255);
+  margin-left: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+ .c-container img {
+  width: 100%;
+
+}
+.c-container h3 {
+margin-top: 1rem;
+margin-left: 1rem;
+font-weight: 700;
+font-size: 2rem;
+}
+.c-container h4 {
+margin-top: .5rem;
+margin-left: 1rem;
+font-weight: 300;
+font-size: 1.3rem;
+line-height: 1.2;
+color: rgb(160, 159, 159);
+}
+.c-container a:hover {
+  color: rgb(94, 134, 237);
+
+
+}
+.c-container a {
+  text-decoration: none;
+  color: rgb(74, 74, 74);
+}
+/*courses mobile*/
+@media only screen and (max-width: 700px) {
+
+.courses-container .title {
+  text-align: center;
+}
+  .c-container .desktop {
+    display: none;
+  }
+  .courses {
+    display: flex;
+    flex-direction: column;
+  }
+  .c-container {
+
+    background-color: rgb(216, 216, 216);
+
+  }
+
+}
+/*thesis*/
+.thesis-container {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: .03rem;
+  border-bottom: .15rem solid rgb(216, 216, 216);
+
+}
+.thesis-container h2{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2rem;
+}
+.videocol {
+  width: 60%„
+}
+video {
+  width: 90%;
+
+}
+.thesis-container .bottom-container img {
+  padding: 1rem;
+  width: 95%;
+}
+.bottom-container .left-column {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.5rem;
+  width: 60%;
+
+}
+.bottom-container .left-column h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-top: 1.5rem;
+  padding-bottom: .5rem;
+
+}
+.bottom-container .left-column h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgb(160, 159, 159);
+
+
+
+}
+
+.bottom-container .right-column {
+  display: flex;
+  flex-direction: column;
+width: 40%;
+  align-content: center;
+}
+.bottom-container .right-column h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+  align-items: center;
+  padding-right: 2rem;
+
+}
+.bottom-container .right-column h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgb(160, 159, 159);
+  padding-left: 1rem;
+  align-items: center;
+  padding-right: 2rem;
+
+
+}
+.bottom-container .right-column .row{
+  display: flex;
+  flex-direction: row;
+
+}
+.bottom-container .right-column .row:hover {
+ background-color: rgb(216, 216, 216);
+}
+.bottom-container .right-column .row .image-container{
+  width: 35%;
+}
+.bottom-container .right-column .row .text-container {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-bottom: .5rem;
+}
+
+/*thesis mobile*/
+@media only screen and (max-width: 480px) {
+.thesis-container .desktop{
+  display: none;
+}
+.videocol {
+  width: 100%;
+}
+video {
+  width: 100%;
+  padding: 0rem 0rem 0rem 0rem;
+
+}
+}
+/*footer*/
+footer {
+  display: inline-flex;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  font-family: "Merriweather", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: rgb(160, 159, 159);
+  letter-spacing: .02rem;
+}
+footer a {
+  display: inline-flex;
+  text-decoration: none;
+  color: rgb(160, 159, 159);
+  justify-content: space-around;
+
+
+}
+footer h5 {
+  display: inline-flex;
+  justify-content: flex-start;
+}
+
+/*footer mobile*/
+@media only screen and (max-width: 480px) {
+.desktop {
+  display: none;
+}
+}
