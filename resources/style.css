@@ -1,6 +1,6 @@
 /*universal*/
 body {
-  margin: auto 0;
+  margin: auto;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   color: rgb(74, 74, 74);
@@ -12,7 +12,7 @@ div {
   display: none;
 }
 /*header*/
-nav {
+header {
   display: inline-flex;
   position: fixed;
   background-color: rgb(255,255,255);
@@ -30,24 +30,32 @@ nav {
   padding-left: 1.5rem;
   height: 3rem;
   font-family: "Merriweather", sans-serif;
+  width: 100%;
+
 }
 .logo img {
   height: 100%;
-
 }
+.logo-name {
+  padding-left: 0;
+}
+
 
 #grey {
   font-weight: 300;
   color: rgb(216, 216, 216);
 
+
 }
 .navigation {
+
   display: inline-flex;
   justify-content: flex-end;
   flex-wrap: nowrap;
   align-items: center;
   font-family: "Roboto", sans-serif;
   letter-spacing: .03rem;
+  width: 100%;
 }
 
 .navigation .desktop {
@@ -62,25 +70,24 @@ nav {
   font-weight: lighter;
   text-decoration: none;
   color: rgb(74, 74, 74);
-  justify-content: flex-end;
 
 }
 
-nav a:hover {
+header a:hover {
   background-color: rgb(216, 216, 216);
   border-radius: 1.5rem;
 }
 
 
-nav .mobile {
+header .mobile {
   display: none;
 }
 /*header smaller screen*/
 @media only screen and (max-width: 800px){
-  nav .navigation .desktop {
+  header .navigation .desktop {
     display: none;
   }
-  nav .navigation .mobile {
+  header .navigation .mobile {
     display: block;
 
   }
@@ -88,11 +95,11 @@ nav .mobile {
 
 /*header mobile*/
 @media only screen and (max-width: 480px){
-  nav .desktop {
+  header .desktop {
     display: none;
 
   }
-  nav .mobile {
+  header .mobile {
     display: block;
     width: 100%;
     padding-left: 3rem;
@@ -204,13 +211,13 @@ padding: 2rem 1.5rem;
 }
 .info-container .column-left img {
   width: 95%;
-  
+
   margin-right: 1.5rem;
   border-left: .15rem solid rgb(216, 216, 216);
   border-right: .15rem solid rgb(216, 216, 216);
 
 }
-.column-left .text-container {
+.info-container .column-left .text-container {
   width: 60%;
   align-items: center;
 
@@ -327,7 +334,7 @@ margin-bottom: .2rem;
 .info-container .desktop {
   display: none;
 }
-.column-right .mobile {
+.info-container .column-right .mobile {
   display: block;
 }
 .orientation, .campus, .lecturer{
@@ -336,7 +343,7 @@ margin-bottom: .2rem;
   padding-bottom: 2rem;
 
 }
-.mobile img {
+.info-container .mobile img {
 
    padding: 1rem;
 }
@@ -469,6 +476,7 @@ video {
   padding-top: 1.5rem;
   padding-bottom: .5rem;
 
+
 }
 .bottom-container .left-column h4 {
   font-size: 1.5rem;
@@ -550,19 +558,24 @@ footer {
   font-weight: 300;
   color: rgb(160, 159, 159);
   letter-spacing: .02rem;
+  width: 100%;
 }
 .copyright {
  display: inline-flex;
  justify-content: flex-start;
  flex-wrap: nowrap;
+ width: 100%;
 }
 .desktop {
   display: inline-flex;
   justify-content: flex-end;
+  width: 100%;
+  margin-right: 1.5rem;
 }
 .desktop a{
   text-decoration: none;
   color: rgb(160, 159, 159);
+  padding-right: 2rem;
 
 }
 
