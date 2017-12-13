@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["1APAh"]); }
+
+__d("BoostedAutomatedAdsPreviewV3.react",["fbt","React","SUIBusinessTheme","SUIText.react"],(function a(b,c,d,e,f,g,h){"use strict";function i(){return c("React").createElement(c("SUIText.react"),{display:"block",shade:"dark",size:"header3",theme:c("SUIBusinessTheme"),weight:"bold"},h._("Use multiple ads in your promotion"))}f.exports=i}),null);

@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["08VAA"]); }
+
+__d("adsLWIAutomatedAdsDialogUIStoreDataSelector",["AdsStoreUtils","BoostedAutomatedAdsDialogUIStoreData","BoostedAutomatedAdsDialogUIStoreV2","adsLWICreateLegacyKeyedStoreDataSelector"],(function a(b,c,d,e,f,g){"use strict";var h=c("AdsStoreUtils").toSelector(c("BoostedAutomatedAdsDialogUIStoreV2")),i=c("adsLWICreateLegacyKeyedStoreDataSelector")(h,function(j){return new(c("BoostedAutomatedAdsDialogUIStoreData"))(j)});f.exports=i}),null);
