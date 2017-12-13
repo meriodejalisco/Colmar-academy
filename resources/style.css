@@ -1,6 +1,6 @@
 /*universal*/
 body {
-  margin: auto;
+  margin: auto 0;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   color: rgb(74, 74, 74);
@@ -10,9 +10,10 @@ div {
 }
 .mobile {
   display: none;
+  width: 100%;
 }
 /*header*/
-header {
+nav {
   display: inline-flex;
   position: fixed;
   background-color: rgb(255,255,255);
@@ -26,29 +27,23 @@ header {
 .logo {
   display: inline-flex;
   align-items: center;
+  width: 100%;
   justify-content: flex-start;
   padding-left: 1.5rem;
   height: 3rem;
   font-family: "Merriweather", sans-serif;
-  width: 100%;
-
 }
 .logo img {
   height: 100%;
-}
-.logo-name {
-  padding-left: 0;
-}
 
+}
 
 #grey {
   font-weight: 300;
   color: rgb(216, 216, 216);
 
-
 }
 .navigation {
-
   display: inline-flex;
   justify-content: flex-end;
   flex-wrap: nowrap;
@@ -70,24 +65,26 @@ header {
   font-weight: lighter;
   text-decoration: none;
   color: rgb(74, 74, 74);
+  justify-content: flex-end;
+
 
 }
 
-header a:hover {
+nav a:hover {
   background-color: rgb(216, 216, 216);
   border-radius: 1.5rem;
 }
 
 
-header .mobile {
+nav .mobile {
   display: none;
 }
 /*header smaller screen*/
 @media only screen and (max-width: 800px){
-  header .navigation .desktop {
+  nav .navigation .desktop {
     display: none;
   }
-  header .navigation .mobile {
+  nav .navigation .mobile {
     display: block;
 
   }
@@ -95,14 +92,22 @@ header .mobile {
 
 /*header mobile*/
 @media only screen and (max-width: 480px){
-  header .desktop {
+  nav .desktop {
     display: none;
 
   }
-  header .mobile {
-    display: block;
+  nav {
+    display: inline-flex;
     width: 100%;
-    padding-left: 3rem;
+  }
+  nav .navigation .mobile {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+  nav .mobile a {
+    flex-wrap: nowrap;
   }
 
 
@@ -179,6 +184,7 @@ padding: 2rem 1.5rem;
 .banner .image-container img {
   width: 100%;
   padding: 0;
+  margin-top: 0;
 
 
 }
@@ -211,14 +217,15 @@ padding: 2rem 1.5rem;
 }
 .info-container .column-left img {
   width: 95%;
-
+ margin-top: 2rem;
   margin-right: 1.5rem;
   border-left: .15rem solid rgb(216, 216, 216);
   border-right: .15rem solid rgb(216, 216, 216);
 
 }
-.info-container .column-left .text-container {
-  width: 60%;
+.column-left .text-container {
+  width: 80%;
+  padding-left: .5rem;
   align-items: center;
 
 }
@@ -334,7 +341,7 @@ margin-bottom: .2rem;
 .info-container .desktop {
   display: none;
 }
-.info-container .column-right .mobile {
+.column-right .mobile {
   display: block;
 }
 .orientation, .campus, .lecturer{
@@ -343,7 +350,7 @@ margin-bottom: .2rem;
   padding-bottom: 2rem;
 
 }
-.info-container .mobile img {
+.mobile img {
 
    padding: 1rem;
 }
@@ -476,7 +483,6 @@ video {
   padding-top: 1.5rem;
   padding-bottom: .5rem;
 
-
 }
 .bottom-container .left-column h4 {
   font-size: 1.5rem;
@@ -566,16 +572,16 @@ footer {
  flex-wrap: nowrap;
  width: 100%;
 }
-.desktop {
+footer .desktop {
   display: inline-flex;
   justify-content: flex-end;
   width: 100%;
-  margin-right: 1.5rem;
+  margin-right: 2rem;
 }
-.desktop a{
+ footer .desktop a{
   text-decoration: none;
+  padding-right: 1.5rem;
   color: rgb(160, 159, 159);
-  padding-right: 2rem;
 
 }
 
